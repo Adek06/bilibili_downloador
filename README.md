@@ -12,11 +12,13 @@
 
 ## 演示
 
+![a](./pics/a.gif)
 
+![b](./pics/b.gif)
 
+![c](./pics/c.gif)
 
-
-### 安装前准备
+### 使用前准备
 
 > - python3.5
 > - you-get
@@ -31,13 +33,13 @@
 pip install you-get
 ```
 
-另外，由于使用了selenium，需要chrome driver和chrome浏览器，请确保有chrome浏览器，另外[点此下载](https://sites.google.com/a/chromium.org/chromedriver/downloads)chrome driver
+另外，由于使用了selenium，需要chrome driver和chrome浏览器，请确保有chrome浏览器，另外点此下载[chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)。如果无法打开，请看下文的**下载**
 
 windows 下，新建一个命名为chromedriver文件夹，将解压的chromedriver.exe放进文件夹，再配置进path环境变量
 
 Linux下，把下载好的文件放在 /usr/bin 目录下就可以了。
 
-### 安装
+### 下载
 
 linux
 
@@ -46,6 +48,8 @@ git clone https://github.com/Adek06/bilibili_downloador.git
 ```
 
 windows ，[点击这里下载](https://codeload.github.com/Adek06/bilibili_downloador/zip/master)
+
+others文件夹里有chrome driver。
 
 ###  使用
 
