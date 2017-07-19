@@ -16,6 +16,7 @@ class Ep_info(object):
         print('在全力打开中，请稍等...')
         sleep(5)
         Ep_info_rep = findall(r"bangumi.bilibili.com/anime/\d{2,}/play#\d{2,}",driver.page_source)
+        driver.close()
         Ep_info_list = []
         for i in Ep_info_rep:
             if i not in Ep_info_list:
