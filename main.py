@@ -43,7 +43,7 @@ def main():
                 print('在创建文件夹时出了点问题')
                 exit()
 
-            downLoad = Downloads.Download(epInfo)
+            downLoad = Downloads.Download(epInfo,animeName)
             downLoad.down_load()
     except:
         pass

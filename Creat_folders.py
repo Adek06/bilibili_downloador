@@ -2,8 +2,8 @@ from os import mkdir, chdir, listdir
 
 class creat_folder(object):
 
-	def __init__(self, ep_name):
-		self.ep_name = ep_name
+	def __init__(self, Ep_name):
+		self.Ep_name = Ep_name
 	
 	def creat_ep_folder(self):
 		
@@ -12,8 +12,8 @@ class creat_folder(object):
 		else:
 			mkdir('./EP/')
 
-		if self.ep_name in (listdir('./EP/')):
+		if self.Ep_name in (listdir('./EP/')):
 			pass
 		else:
-			mkdir('./EP/'+str(self.ep_name))
-			chdir('./EP/'+str(self.ep_name))
+			mkdir('./EP/'+str(self.Ep_name))
+		
