@@ -20,36 +20,19 @@
 
 ### 使用前准备
 
-> - python3.5
-> - you-get
+> - python3.5或以上
 > - chrome浏览器
 > - chrome driver
-
-该程序借由you-get完成。
-
-所以在运行前，请确保自己已经安装了you-get
 
 ```
 pip install you-get
 ```
 
-另外，由于使用了selenium，需要chrome driver和chrome浏览器，请确保有chrome浏览器，另外点此下载[chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)。如果无法打开，请看下文的**下载**
-
-windows 下，新建一个命名为chromedriver文件夹，将解压的chromedriver.exe放进文件夹，再配置进path环境变量
-
-Linux下，把下载好的文件放在 /usr/bin 目录下就可以了。
+另外，由于使用了selenium，需要Firefox浏览器。可以到[火狐浏览器下载地址](http://www.firefox.com.cn/)
 
 ### 下载
 
-linux
-
-```
-git clone https://github.com/Adek06/bilibili_downloador.git
-```
-
-windows ，[点击这里下载](https://codeload.github.com/Adek06/bilibili_downloador/zip/master)
-
-others文件夹里有chrome driver。
+[点击这里下载](https://codeload.github.com/Adek06/bilibili_downloador/zip/master)
 
 ###  使用
 
