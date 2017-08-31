@@ -21,8 +21,6 @@
 ### 使用前准备
 
 > - python3.5或以上
-> - chrome浏览器
-> - chrome driver
 
 ```
 pip install you-get
