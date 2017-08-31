@@ -5,7 +5,7 @@ def creat_folder(animeName):
     creatEpFolder = Creat_folders.creat_folder(animeName)
     creatEpFolder.creat_ep_folder()
 
-def download_ep(enInfo,animeName):
+def download_ep(epInfo,animeName):
     downLoad = Downloads.Download(epInfo,animeName)
     downLoad.down_load()
 
@@ -55,7 +55,7 @@ def main():
 
                 creat_folder(animeName)
 
-                downLoad_ep(enInfo,animeName)
+                download_ep(epInfo,animeName)
             else :
                 print("请输入数字，否则按\"Ctrl+C\"退出")
 
