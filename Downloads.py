@@ -1,4 +1,6 @@
 from os import system, chdir
+import sys
+from you_get import common as you_get
 
 class Download(object):
 
@@ -19,4 +21,8 @@ class Download(object):
                 如果想要退出下载，请直接关闭程序即可
                 下载好的文件会出现在该EP文件夹里
             """)
-            system("you-get "+i)
+            try:
+                sys.argv=['you-get',i]
+                you_get.main()
+            except:
+                exit()
