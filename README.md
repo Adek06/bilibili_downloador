@@ -22,10 +22,6 @@
 
 > - python3.5或以上
 
-```
-pip install you-get
-```
-
 另外，由于使用了selenium，需要Firefox浏览器。可以到[火狐浏览器下载地址](http://www.firefox.com.cn/)
 
 ### 下载
