@@ -8,13 +8,17 @@ class creat_folder(object):
 	def creat_ep_folder(self):
 		try:
 			if 'EP' in (listdir(".")):
-				pass
+				chdir('./EP')
+				if self.Ep_name in (listdir('.')):
+					chdir(str(self.Ep_name))
+				else:
+					mkdir(str(self.Ep_name))
+					chdir(str(self.Ep_name))
 			else:
 				mkdir('./EP/')
+				chdir('./EP')
+				mkdir(str(self.Ep_name))
+				chdir(str(self.Ep_name))
 
-				if self.Ep_name in (listdir('./EP/')):
-					pass
-				else:
-					mkdir('./EP/'+str(self.Ep_name))
 		except:
 			print("在创建文件夹时出了问题")
