@@ -13,6 +13,7 @@ class Download(object):
         for i in range(len(down_url_list)):
             sys.argv=['you-get',down_url_list[i]]
             you_get.main()
+            system('cls')
 
     def down_load(self):
         print("请问要从第几集开始下载？")
