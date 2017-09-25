@@ -6,7 +6,7 @@ def creat_folder(animeName):
     creatEpFolder.creat_ep_folder()
 
 def download_ep(epInfo,animeName):
-    downLoad = Downloads.Download(epInfo,animeName)
+    downLoad = Downloads.Download(epInfo)
     downLoad.down_load()
 
 def main():
@@ -34,7 +34,8 @@ def main():
     """)
 
     print("""
-    1.bilibili
+    1.bilibili番剧
+    2.bilibili视频合集
     """)
 
     try:
@@ -55,6 +56,19 @@ def main():
                 creat_folder(animeName)
 
                 download_ep(epInfo,animeName)
+            elif select == '2':
+                notNum = False
+            #    try:
+                setPath = input("请复制粘贴要下载集合的地址:")
+                setName = input("请给合集取个名字:")
+                getSetInfo = Ep_infos.Ep_info(setPath)
+                #setName = '合集下载'
+                #getSetInfo = Ep_infos.Ep_info('https://www.bilibili.com/video/av1893599/?from=search&seid=3284471240480434664')
+                setNums,setList = getSetInfo.bilibili_Set_info()
+                creat_folder(setName)
+                download_ep(setList,setName)
+                #except:
+                #    print("程序出了点问题，请等下一个版本修复")
             else :
                 print("请输入数字，否则按\"Ctrl+C\"退出")
 
