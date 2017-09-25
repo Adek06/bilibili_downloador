@@ -5,9 +5,9 @@ import multiprocessing as mp
 
 class Download(object):
 
-    def __init__(self,Ep_info_list,Ep_name):
+    def __init__(self,Ep_info_list):
         self.Ep_info_list = Ep_info_list
-        self.Ep_name = Ep_name
+        #self.Ep_name = Ep_name
 
     def use_youget(self,down_url_list):
         for i in range(len(down_url_list)):
@@ -25,6 +25,9 @@ class Download(object):
         #chdir('.\EP')
         #chdir(str(self.Ep_name))
 
+        self.use_youget(down_list)
+
+        '''
         down_list1=[]
         down_list2=[]
 
@@ -41,4 +44,5 @@ class Download(object):
             pr2.start()
             pr2.join()
         pr1.join()
+        '''
         print("下载结束")
