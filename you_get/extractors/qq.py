@@ -5,6 +5,7 @@ __all__ = ['qq_download']
 from ..common import *
 from ..util.log import *
 from .qie import download as qieDownload
+from .qie_video import download_by_url as qie_video_download
 from urllib.parse import urlparse,parse_qs
 
 def qq_download_by_vid(vid, title, output_dir='.', merge=True, info_only=False):
@@ -18,7 +19,9 @@ def qq_download_by_vid(vid, title, output_dir='.', merge=True, info_only=False):
     title = video_json['vl']['vi'][0]['ti']
     host = video_json['vl']['vi'][0]['ul']['ui'][0]['url']
     streams = video_json['fl']['fi']
-    seg_cnt = len(video_json['vl']['vi'][0]['cl']['ci'])
+    seg_cnt = video_json['vl']['vi'][0]['cl']['fc']
+    if seg_cnt == 0:
+        seg_cnt = 1
 
     best_quality = streams[-1]['name']
     part_format_id = streams[-1]['id']
@@ -31,7 +34,10 @@ def qq_download_by_vid(vid, title, output_dir='.', merge=True, info_only=False):
         part_info = get_content(key_api)
         key_json = json.loads(match1(part_info, r'QZOutputJson=(.*)')[:-1])
         if key_json.get('key') is None:
-            log.w(key_json['msg'])
+            if part == 1:
+                log.wtf(key_json['msg'])
+            else:
+                log.w(key_json['msg'])
             break
         vkey = key_json['key']
         url = '{}{}?vkey={}'.format(host, filename, vkey)
@@ -83,6 +89,11 @@ def kg_qq_download_by_shareid(shareid, output_dir='.', info_only=False, caption=
 
 def qq_download(url, output_dir='.', merge=True, info_only=False, **kwargs):
     """"""
+    if re.match(r'https?://egame.qq.com/live\?anchorid=(\d+)', url):
+        from . import qq_egame
+        qq_egame.qq_egame_download(url, output_dir=output_dir, merge=merge, info_only=info_only, **kwargs)
+        return
+
     if 'kg.qq.com' in url or 'kg2.qq.com' in url:
         shareid = url.split('?s=')[-1]
         caption = kwargs['caption']
@@ -90,7 +101,10 @@ def qq_download(url, output_dir='.', merge=True, info_only=False, **kwargs):
         return
 
     if 'live.qq.com' in url:
-        qieDownload(url, output_dir=output_dir, merge=merge, info_only=info_only)
+        if 'live.qq.com/video/v' in url:
+            qie_video_download(url, output_dir=output_dir, merge=merge, info_only=info_only, **kwargs)
+        else:
+            qieDownload(url, output_dir=output_dir, merge=merge, info_only=info_only)
         return
 
     if 'mp.weixin.qq.com/s?' in url:
@@ -125,6 +139,8 @@ def qq_download(url, output_dir='.', merge=True, info_only=False, **kwargs):
         content = get_content(url)
         vid = parse_qs(urlparse(url).query).get('vid') #for links specified vid  like http://v.qq.com/cover/p/ps6mnfqyrfo7es3.html?vid=q0181hpdvo5
         vid = vid[0] if vid else match1(content, r'vid"*\s*:\s*"\s*([^"]+)"') #general fallback
+        if vid is None:
+            vid = match1(content, r'id"*\s*:\s*"(.+?)"')
         title = match1(content,r'<a.*?id\s*=\s*"%s".*?title\s*=\s*"(.+?)".*?>'%vid)
         title = match1(content, r'title">([^"]+)</p>') if not title else title
         title = match1(content, r'"title":"([^"]+)"') if not title else title

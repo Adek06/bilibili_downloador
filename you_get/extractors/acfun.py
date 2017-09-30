@@ -8,7 +8,7 @@ from .le import letvcloud_download_by_vu
 from .qq import qq_download_by_vid
 from .sina import sina_download_by_vid
 from .tudou import tudou_download_by_iid
-from .youku import youku_download_by_vid, youku_open_download_by_vid
+from .youku import youku_download_by_vid
 
 import json
 import re
@@ -105,7 +105,7 @@ def acfun_download_by_vid(vid, title, output_dir='.', merge=True, info_only=Fals
             pass
 
 def acfun_download(url, output_dir='.', merge=True, info_only=False, **kwargs):
-    assert re.match(r'http://[^\.]+.acfun.[^\.]+/\D/\D\D(\d+)', url)
+    assert re.match(r'http://[^\.]*\.*acfun\.[^\.]+/\D/\D\D(\d+)', url)
     html = get_content(url)
 
     title = r1(r'data-title="([^"]+)"', html)

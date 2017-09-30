@@ -1,8 +1,11 @@
 __all__ = ['embed_download']
 
+import urllib.parse
+
 from ..common import *
 
 from .bilibili import bilibili_download
+from .dailymotion import dailymotion_download
 from .iqiyi import iqiyi_download_by_vid
 from .le import letvcloud_download_by_vu
 from .netease import netease_download
@@ -12,6 +15,8 @@ from .tudou import tudou_download_by_id
 from .vimeo import vimeo_download_by_id
 from .yinyuetai import yinyuetai_download_by_id
 from .youku import youku_download_by_vid
+from . import iqiyi
+from . import bokecc
 
 """
 refer to http://open.youku.com/tools
@@ -43,10 +48,23 @@ netease_embed_patterns = [ '(http://\w+\.163\.com/movie/[^\'"]+)' ]
 
 vimeo_embed_patters = [ 'player\.vimeo\.com/video/(\d+)' ]
 
+dailymotion_embed_patterns = [ 'www\.dailymotion\.com/embed/video/(\w+)' ]
+
 """
 check the share button on http://www.bilibili.com/video/av5079467/
 """
 bilibili_embed_patterns = [ 'static\.hdslb\.com/miniloader\.swf.*aid=(\d+)' ]
+
+
+'''
+http://open.iqiyi.com/lib/player.html
+'''
+iqiyi_patterns = [r'(?:\"|\')(https?://dispatcher\.video\.qiyi\.com\/disp\/shareplayer\.swf\?.+?)(?:\"|\')',
+                  r'(?:\"|\')(https?://open\.iqiyi\.com\/developer\/player_js\/coopPlayerIndex\.html\?.+?)(?:\"|\')']
+
+bokecc_patterns = [r'bokecc\.com/flash/pocle/player\.swf\?siteid=(.+?)&vid=(.{32})']
+
+recur_limit = 3
 
 
 def embed_download(url, output_dir = '.', merge = True, info_only = False ,**kwargs):
@@ -77,12 +95,17 @@ def embed_download(url, output_dir = '.', merge = True, info_only = False ,**kwa
     urls = matchall(content, netease_embed_patterns)
     for url in urls:
         found = True
-        netease_download(url, title=title, output_dir=output_dir, merge=merge, info_only=info_only)
+        netease_download(url, output_dir=output_dir, merge=merge, info_only=info_only)
 
     urls = matchall(content, vimeo_embed_patters)
     for url in urls:
         found = True
-        vimeo_download_by_id(url, title=title, output_dir=output_dir, merge=merge, info_only=info_only)
+        vimeo_download_by_id(url, title=title, output_dir=output_dir, merge=merge, info_only=info_only, referer=url)
+
+    urls = matchall(content, dailymotion_embed_patterns)
+    for url in urls:
+        found = True
+        dailymotion_download(url, output_dir=output_dir, merge=merge, info_only=info_only)
 
     aids = matchall(content, bilibili_embed_patterns)
     for aid in aids:
@@ -90,8 +113,40 @@ def embed_download(url, output_dir = '.', merge = True, info_only = False ,**kwa
         url = 'http://www.bilibili.com/video/av%s/' % aid
         bilibili_download(url, output_dir=output_dir, merge=merge, info_only=info_only)
 
-    if not found:
+    iqiyi_urls = matchall(content, iqiyi_patterns)
+    for url in iqiyi_urls:
+        found = True
+        iqiyi.download(url, output_dir=output_dir, merge=merge, info_only=info_only, **kwargs)
+
+    bokecc_metas = matchall(content, bokecc_patterns)
+    for meta in bokecc_metas:
+        found = True
+        bokecc.bokecc_download_by_id(meta[1], output_dir=output_dir, merge=merge, info_only=info_only, **kwargs)
+
+    if found:
+        return True
+
+    # Try harder, check all iframes
+    if 'recur_lv' not in kwargs or kwargs['recur_lv'] < recur_limit:
+        r = kwargs.get('recur_lv')
+        if r is None:
+            r = 1
+        else:
+            r += 1
+        iframes = matchall(content, [r'<iframe.+?src=(?:\"|\')(.+?)(?:\"|\')'])
+        for iframe in iframes:
+            if not iframe.startswith('http'):
+                src = urllib.parse.urljoin(url, iframe)
+            else:
+                src = iframe
+            found = embed_download(src, output_dir=output_dir, merge=merge, info_only=info_only, recur_lv=r, **kwargs)
+            if found:
+                return True
+
+    if not found and 'recur_lv' not in kwargs:
         raise NotImplementedError(url)
+    else:
+        return found
 
 site_info = "any.any"
 download = embed_download

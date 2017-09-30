@@ -17,6 +17,7 @@ from .douban import *
 from .douyutv import *
 from .ehow import *
 from .facebook import *
+from .fantasy import *
 from .fc2video import *
 from .flickr import *
 from .freesound import *
@@ -55,6 +56,7 @@ from .pinterest import *
 from .pixnet import *
 from .pptv import *
 from .qie import *
+from .qingting import *
 from .qq import *
 from .showroom import *
 from .sina import *

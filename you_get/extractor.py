@@ -210,6 +210,9 @@ class VideoExtractor():
                 ext = self.dash_streams[stream_id]['container']
                 total_size = self.dash_streams[stream_id]['size']
 
+            if ext == 'm3u8':
+                ext = 'mp4'
+
             if not urls:
                 log.wtf('[Failed] Cannot extract video source.')
             # For legacy main()
@@ -241,5 +244,6 @@ class VideoExtractor():
 
             # For main_dev()
             #download_urls(urls, self.title, self.streams[stream_id]['container'], self.streams[stream_id]['size'])
-
-        self.__init__()
+        keep_obj = kwargs.get('keep_obj', False)
+        if not keep_obj:
+            self.__init__()

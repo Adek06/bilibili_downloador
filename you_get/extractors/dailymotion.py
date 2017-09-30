@@ -32,7 +32,7 @@ def dailymotion_download(url, output_dir='.', merge=True, info_only=False, **kwa
 
     print_info(site_info, title, mime, size)
     if not info_only:
-        download_urls(real_url, title, ext, output_dir=output_dir, merge=merge)
+        download_urls([real_url], title, ext, size, output_dir=output_dir, merge=merge)
 
 site_info = "Dailymotion.com"
 download = dailymotion_download
