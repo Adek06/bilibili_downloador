@@ -57,18 +57,22 @@ def main():
 
                 download_ep(epInfo,animeName)
             elif select == '2':
+                print('''
+                在网页上打开需要下载的合集，复制地址栏上的地址
+                下载结束后，打开该程序文件夹下的EP文件夹查找下载好的合集
+                ''')
                 notNum = False
-            #    try:
-                setPath = input("请复制粘贴要下载集合的地址:")
-                setName = input("请给合集取个名字:")
-                getSetInfo = Ep_infos.Ep_info(setPath)
+                try:
+                    setPath = input("下载集合的地址:")
+                    setName = input("请给合集取个名字:")
+                    getSetInfo = Ep_infos.Ep_info(setPath)
                 #setName = '合集下载'
                 #getSetInfo = Ep_infos.Ep_info('https://www.bilibili.com/video/av1893599/?from=search&seid=3284471240480434664')
-                setNums,setList = getSetInfo.bilibili_Set_info()
-                creat_folder(setName)
-                download_ep(setList,setName)
-                #except:
-                #    print("程序出了点问题，请等下一个版本修复")
+                    setNums,setList = getSetInfo.bilibili_Set_info()
+                    creat_folder(setName)
+                    download_ep(setList,setName)
+                except:
+                    print("程序出了点问题，请等下一个版本修复")
             else :
                 print("请输入数字，否则按\"Ctrl+C\"退出")
 
