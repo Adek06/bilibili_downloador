@@ -20,7 +20,7 @@ class search_ep(object):
         anlhm = findall(r"class=\"title\" href.{2,}title=\".{2,20}\"",anlh.text)
         anl = []
         for i in range(len(anlhm)):
-            anl.append(search(r'title=\".{2,15}\"',anlhm[i]).group(0)[7:-1])
+            anl.append(search(r'title=\".{2,15}\" lnk',anlhm[i]).group(0)[7:-5])
 
         print("你要找的是下面哪一个动漫呢？(输入名字前的序号选择)")
         for i in range(len(anl)):
