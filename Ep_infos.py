@@ -51,5 +51,5 @@ class Ep_info(object):
             exit()
         sleep(5)
         text = driver.page_source
-        driver.close
+        driver.close()
         return text
