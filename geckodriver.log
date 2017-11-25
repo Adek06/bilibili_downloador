@@ -1,0 +1,274 @@
+1511240236141	geckodriver	INFO	geckodriver 0.18.0
+1511240236172	geckodriver	INFO	Listening on 127.0.0.1:54364
+1511240238424	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511240239733	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 9096, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7760, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7760, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511240244124	Marionette	INFO	Listening on port 54370
+1511240244295	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511240244363	Marionette	DEBUG	Register listener.js for window 4294967297
+1511240244732	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511240245494	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511240245495	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511240246748	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511240250323	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+te"]
+1511240285501	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511240289025	Marionette	INFO	Listening on port 54477
+1511240289770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511240289836	Marionette	DEBUG	Register listener.js for window 4294967297
+1511240289848	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511240290664	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511240290664	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511240291552	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511240293776	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 14636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 14636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 14484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1511241625621	geckodriver	INFO	geckodriver 0.18.0
+1511241625621	geckodriver	INFO	Listening on 127.0.0.1:55286
+1511241627736	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511241628522	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511241631229	Marionette	INFO	Listening on port 55292
+1511241631429	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511241631475	Marionette	DEBUG	Register listener.js for window 4294967297
+1511241631497	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511241632244	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511241632245	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511241633217	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511241635377	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 7932, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7932, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+DOM event "beforeunload" for "about:blank"
+1511242040003	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511242040004	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511242040959	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511242042716	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 8436, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12808, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1511248861833	geckodriver	INFO	geckodriver 0.18.0
+1511248861849	geckodriver	INFO	Listening on 127.0.0.1:53058
+1511248863650	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511248865276	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511248870161	Marionette	INFO	Listening on port 53064
+1511248871407	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511248871499	Marionette	DEBUG	Register listener.js for window 4294967297
+1511248871570	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511248872416	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511248872417	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511248873193	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511248876512	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511248991429	geckodriver	INFO	geckodriver 0.18.0
+1511248991429	geckodriver	INFO	Listening on 127.0.0.1:53415
+1511248993514	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511248994306	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 15588, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511248997457	Marionette	INFO	Listening on port 53422
+1511248997735	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511248997783	Marionette	DEBUG	Register listener.js for window 4294967297
+1511248997807	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511248998866	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511248998867	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511248999998	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511249001727	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511250343740	geckodriver	INFO	geckodriver 0.18.0
+1511250343756	geckodriver	INFO	Listening on 127.0.0.1:54457
+1511250345691	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511250346603	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10588, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10588, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511250349809	Marionette	INFO	Listening on port 54464
+1511250349843	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511250349924	Marionette	DEBUG	Register listener.js for window 4294967297
+1511250349954	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511250350818	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511250350818	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511250351605	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511250352192	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511250818360	geckodriver	INFO	geckodriver 0.18.0
+1511250818360	geckodriver	INFO	Listening on 127.0.0.1:54929
+1511250820430	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511250821038	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7948, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7948, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511250824675	Marionette	INFO	Listening on port 54935
+1511250825784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511250825828	Marionette	DEBUG	Register listener.js for window 4294967297
+1511250825842	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511250826628	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511250826628	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511250827505	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511250829341	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511252210848	geckodriver	INFO	geckodriver 0.18.0
+1511252210867	geckodriver	INFO	Listening on 127.0.0.1:56098
+1511252212968	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511252214500	Marionette	INFO	Enabled via --marionette
+1511252221503	Marionette	INFO	Listening on port 56104
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 16084, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16084, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511252222550	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511252222620	Marionette	DEBUG	Register listener.js for window 4294967297
+1511252222630	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511252223448	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511252223449	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511252224460	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511252227384	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511252268304	geckodriver	INFO	geckodriver 0.18.0
+1511252268319	geckodriver	INFO	Listening on 127.0.0.1:56235
+1511252270404	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511252271900	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 15732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511252275189	Marionette	INFO	Listening on port 56241
+1511252275724	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511252275763	Marionette	DEBUG	Register listener.js for window 4294967297
+1511252275772	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511252276699	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511252276700	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511252277333	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511252279080	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511252427108	geckodriver	INFO	geckodriver 0.18.0
+1511252427123	geckodriver	INFO	Listening on 127.0.0.1:56406
+1511252429186	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511252429862	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511252432353	Marionette	INFO	Listening on port 56413
+1511252432832	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511252432900	Marionette	DEBUG	Register listener.js for window 4294967297
+1511252432911	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511252434222	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511252434223	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511252434968	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/5394"
+1511252436905	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/5394"
+1511441920933	geckodriver	INFO	geckodriver 0.18.0
+1511441920979	geckodriver	INFO	Listening on 127.0.0.1:57044
+1511441923402	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511441924855	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 15012, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15012, Chrome_ChilUnable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511441930787	Marionette	INFO	Listening on port 57058
+1511441930978	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511441931096	Marionette	DEBUG	Register listener.js for window 4294967297
+1511441931390	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511441932458	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511441932458	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511441933726	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/1512"
+1511441943606	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/1512"
+1511444770319	geckodriver	INFO	geckodriver 0.18.0
+1511444770333	geckodriver	INFO	Listening on 127.0.0.1:59001
+1511444772425	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511444773439	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 4332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/iUnable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511444777653	Marionette	INFO	Listening on port 59007
+1511444777837	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511444777877	Marionette	DEBUG	Register listener.js for window 4294967297
+1511444777892	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511444778869	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511444778870	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511444780288	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/1512"
+1511444782319	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/1512"
+1511493472553	geckodriver	INFO	geckodriver 0.18.0
+1511493472569	geckodriver	INFO	Listening on 127.0.0.1:62615
+1511493474708	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511493476412	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 5716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511493479908	Marionette	INFO	Listening on port 62622
+1511493480005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511493480063	Marionette	DEBUG	Register listener.js for window 4294967297
+1511493480104	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511493481325	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511493481325	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511493482410	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/1512"
+1511493488170	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/1512"
+1511494131886	geckodriver	INFO	geckodriver 0.18.0
+1511494131902	geckodriver	INFO	Listening on 127.0.0.1:63108
+1511494134004	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511494135684	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 1612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511494142076	Marionette	INFO	Listening on port 63114
+[Child 15936, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15936, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/sUnable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511494142345	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511494142400	Marionette	DEBUG	Register listener.js for window 4294967297
+1511494142427	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511494143207	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511494143207	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511494144230	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/1512"
+1511494144856	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/1512"
+1511494184683	geckodriver	INFO	geckodriver 0.18.0
+1511494184683	geckodriver	INFO	Listening on 127.0.0.1:63235
+1511494186755	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511494188512	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/buildUnable to read VR Path Registry from C:\Users\adek0\AppData\Local\openvr\openvrpaths.vrpath
+1511494191763	Marionette	INFO	Listening on port 63241
+1511494192087	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511494192176	Marionette	DEBUG	Register listener.js for window 4294967297
+1511494192203	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511494192901	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511494192901	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511494193908	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://bangumi.bilibili.com/anime/1512"
+1511494196661	Marionette	DEBUG	Received DOM event "pageshow" for "https://bangumi.bilibili.com/anime/1512"

@@ -43,7 +43,7 @@ class Ep_info(object):
 
     def open_Web(self):
         print('正在打开浏览器寻找下载地址，请稍等...')
-        driver = webdriver.Firefox()
+        driver = webdriver.PhantomJS()
         try:
             driver.get(self.html)
         except:

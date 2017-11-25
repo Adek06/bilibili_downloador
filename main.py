@@ -26,10 +26,6 @@ def main():
     """)
 
     print("""
-    在开始下载前，请确保已经下载并安装了Firefox浏览器。
-    """)
-
-    print("""
     请问需要在哪里下载视频？
     """)
 
@@ -44,11 +40,11 @@ def main():
             select = input(">>> ")
             if select == '1':
                 notNum = False
-                try:
-                    animeDns,animeName = Search_eps.search_ep().bilibili_anime_search()
-                except:
-                    print("在搜索出了问题,请尝试查询该动漫是否属于b站番组计划")
-                    exit()
+           # try:
+                animeDns,animeName = Search_eps.search_ep().bilibili_anime_search()
+           # except:
+                print("在搜索出了问题,请尝试查询该动漫是否属于b站番组计划")
+                exit()
 
                 getEpInfo = Ep_infos.Ep_info(animeDns)
                 epInfo = getEpInfo.bilibili_Ep_info()
