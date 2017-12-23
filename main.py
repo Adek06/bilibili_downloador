@@ -40,9 +40,9 @@ def main():
             select = input(">>> ")
             if select == '1':
                 notNum = False
-           # try:
+           try:
                 animeDns,animeName = Search_eps.search_ep().bilibili_anime_search()
-           # except:
+           except:
                 print("在搜索出了问题,请尝试查询该动漫是否属于b站番组计划")
                 exit()
 
