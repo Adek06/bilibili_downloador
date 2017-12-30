@@ -5,7 +5,7 @@ def creat_folder(animeName):
     creatEpFolder = Creat_folders.creat_folder(animeName)
     creatEpFolder.creat_ep_folder()
 
-def download_ep(epInfo,animeName):
+def download_ep(epInfo):
     downLoad = Downloads.Download(epInfo)
     downLoad.down_load()
 
@@ -40,9 +40,9 @@ def main():
             select = input(">>> ")
             if select == '1':
                 notNum = False
-               try:
+                try:
                     animeDns,animeName = Search_eps.search_ep().bilibili_anime_search()
-               except:
+                except:
                     print("在搜索出了问题,请尝试查询该动漫是否属于b站番组计划")
                     exit()
 
@@ -51,7 +51,7 @@ def main():
 
                 creat_folder(animeName)
 
-                download_ep(epInfo,animeName)
+                download_ep(epInfo)
             elif select == '2':
                 print('''
                 在网页上打开需要下载的合集，复制地址栏上的地址
@@ -65,7 +65,7 @@ def main():
             #getSetInfo = Ep_infos.Ep_info('https://www.bilibili.com/video/av1893599/?from=search&seid=3284471240480434664')
                 setNums,setList = getSetInfo.bilibili_Set_info()
                 creat_folder(setName)
-                download_ep(setList,setName)
+                download_ep(setList)
             else :
                 print("请输入数字，否则按\"Ctrl+C\"退出")
 
